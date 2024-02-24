@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace BussinessObjects
 {
-    public partial class staff
+    public partial class Staff
     {
-        public staff()
+        public Staff()
         {
             PartyHosts = new HashSet<PartyHost>();
         }

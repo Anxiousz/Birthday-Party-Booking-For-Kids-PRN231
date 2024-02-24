@@ -32,7 +32,7 @@ namespace BussinessObjects
         public virtual DbSet<Room> Rooms { get; set; }
         public virtual DbSet<TransactionBooking> TransactionBookings { get; set; }
         public virtual DbSet<Voucher> Vouchers { get; set; }
-        public virtual DbSet<staff> staff { get; set; }
+        public virtual DbSet<Staff> staff { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -410,7 +410,7 @@ namespace BussinessObjects
                     .HasConstraintName("FK_PartyHost_Voucher");
             });
 
-            modelBuilder.Entity<staff>(entity =>
+            modelBuilder.Entity<Staff>(entity =>
             {
                 entity.ToTable("Staff");
 
