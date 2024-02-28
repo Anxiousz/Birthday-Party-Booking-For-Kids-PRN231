@@ -32,7 +32,7 @@ namespace BussinessObjects
         public virtual DbSet<Room> Rooms { get; set; }
         public virtual DbSet<TransactionBooking> TransactionBookings { get; set; }
         public virtual DbSet<Voucher> Vouchers { get; set; }
-        public virtual DbSet<Staff> staff { get; set; }
+        public virtual DbSet<staff> staff { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -71,6 +71,8 @@ namespace BussinessObjects
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Role).HasMaxLength(200);
+
                 entity.Property(e => e.UserName)
                     .IsRequired()
                     .HasMaxLength(200)
@@ -79,19 +81,19 @@ namespace BussinessObjects
 
             modelBuilder.Entity<Booking>(entity =>
             {
-                entity.HasKey(e => new { e.BookingId, e.RoomId, e.AccId });
-
                 entity.ToTable("Booking");
 
-                entity.Property(e => e.BookingId)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("BookingID");
-
-                entity.Property(e => e.RoomId).HasColumnName("RoomID");
+                entity.Property(e => e.BookingId).HasColumnName("BookingID");
 
                 entity.Property(e => e.AccId).HasColumnName("AccID");
 
                 entity.Property(e => e.BookingDate).HasColumnType("datetime");
+
+                entity.Property(e => e.MenuOrderId).HasColumnName("MenuOrderID");
+
+                entity.Property(e => e.RoomId).HasColumnName("RoomID");
+
+                entity.Property(e => e.TransactionId).HasColumnName("TransactionID");
 
                 entity.HasOne(d => d.Acc)
                     .WithMany(p => p.Bookings)
@@ -99,11 +101,22 @@ namespace BussinessObjects
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_RegisteredUser_Booking");
 
+                entity.HasOne(d => d.MenuOrder)
+                    .WithMany(p => p.Bookings)
+                    .HasForeignKey(d => d.MenuOrderId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Booking_MenuOrder");
+
                 entity.HasOne(d => d.Room)
                     .WithMany(p => p.Bookings)
                     .HasForeignKey(d => d.RoomId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Room_Booking");
+
+                entity.HasOne(d => d.Transaction)
+                    .WithMany(p => p.Bookings)
+                    .HasForeignKey(d => d.TransactionId)
+                    .HasConstraintName("FK_Booking_TransactionBooking");
             });
 
             modelBuilder.Entity<Config>(entity =>
@@ -148,7 +161,7 @@ namespace BussinessObjects
             modelBuilder.Entity<LogAction>(entity =>
             {
                 entity.HasKey(e => e.LogId)
-                    .HasName("PK__LogActio__5E5499A83DDB64E1");
+                    .HasName("PK__LogActio__5E5499A86DF8EDDB");
 
                 entity.ToTable("LogAction");
 
@@ -156,25 +169,16 @@ namespace BussinessObjects
 
                 entity.Property(e => e.AccId).HasColumnName("AccID");
 
-                entity.Property(e => e.ActionType)
-                    .IsRequired()
-                    .HasMaxLength(200);
+                entity.Property(e => e.ActionType).HasMaxLength(50);
 
                 entity.Property(e => e.Date).HasColumnType("datetime");
             });
 
             modelBuilder.Entity<MenuOrder>(entity =>
             {
-                entity.HasKey(e => e.MenuId)
-                    .HasName("PK__MenuOrde__C99ED250BB215955");
-
                 entity.ToTable("MenuOrder");
 
-                entity.Property(e => e.MenuId).HasColumnName("MenuID");
-
-                entity.Property(e => e.AccId).HasColumnName("AccID");
-
-                entity.Property(e => e.BookingId).HasColumnName("BookingID");
+                entity.Property(e => e.MenuOrderId).HasColumnName("MenuOrderID");
 
                 entity.Property(e => e.FoodName)
                     .IsRequired()
@@ -182,18 +186,16 @@ namespace BussinessObjects
 
                 entity.Property(e => e.FoodOrderId).HasColumnName("FoodOrderID");
 
-                entity.Property(e => e.RoomId).HasColumnName("RoomID");
-
-                entity.HasOne(d => d.Booking)
+                entity.HasOne(d => d.FoodOrder)
                     .WithMany(p => p.MenuOrders)
-                    .HasForeignKey(d => new { d.BookingId, d.RoomId, d.AccId })
-                    .HasConstraintName("FK_MenuOrder_Booking");
+                    .HasForeignKey(d => d.FoodOrderId)
+                    .HasConstraintName("FK_MenuPartyHost_MenuOrder");
             });
 
             modelBuilder.Entity<MenuPartyHost>(entity =>
             {
                 entity.HasKey(e => e.FoodOrderId)
-                    .HasName("PK__MenuPart__943FF77FD5B96BB8");
+                    .HasName("PK__MenuPart__943FF77FB7D26E38");
 
                 entity.ToTable("MenuPartyHost");
 
@@ -204,6 +206,8 @@ namespace BussinessObjects
                 entity.Property(e => e.FoodName)
                     .IsRequired()
                     .HasMaxLength(50);
+
+                entity.Property(e => e.Image).HasMaxLength(100);
 
                 entity.Property(e => e.PartyHostId).HasColumnName("PartyHostID");
 
@@ -244,6 +248,8 @@ namespace BussinessObjects
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Gender).HasMaxLength(50);
+
                 entity.Property(e => e.PackageId).HasColumnName("PackageID");
 
                 entity.Property(e => e.Password)
@@ -255,6 +261,8 @@ namespace BussinessObjects
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Role).HasMaxLength(200);
 
                 entity.Property(e => e.StaffId).HasColumnName("StaffID");
 
@@ -284,7 +292,7 @@ namespace BussinessObjects
 
                 entity.Property(e => e.PaymentMethod)
                     .IsRequired()
-                    .HasMaxLength(200);
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Post>(entity =>
@@ -297,17 +305,26 @@ namespace BussinessObjects
 
                 entity.Property(e => e.CreatedAt).HasColumnType("datetime");
 
+                entity.Property(e => e.Image).HasMaxLength(100);
+
                 entity.Property(e => e.Title).HasMaxLength(100);
 
                 entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
+
+                entity.HasOne(d => d.CreatedByNavigation)
+                    .WithMany(p => p.Posts)
+                    .HasForeignKey(d => d.CreatedBy)
+                    .HasConstraintName("FK_PartyHost_Post");
             });
 
             modelBuilder.Entity<RegisteredUser>(entity =>
             {
                 entity.HasKey(e => e.AccountId)
-                    .HasName("PK__Register__349DA5A62BFCECD0");
+                    .HasName("PK__Register__349DA58659E2924E");
 
                 entity.ToTable("RegisteredUser");
+
+                entity.Property(e => e.AccountId).HasColumnName("AccountID");
 
                 entity.Property(e => e.Address).HasMaxLength(200);
 
@@ -318,6 +335,8 @@ namespace BussinessObjects
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Gender).HasMaxLength(200);
+
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasMaxLength(20)
@@ -327,6 +346,8 @@ namespace BussinessObjects
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Role).HasMaxLength(200);
 
                 entity.Property(e => e.UserName)
                     .IsRequired()
@@ -339,6 +360,8 @@ namespace BussinessObjects
                 entity.ToTable("Room");
 
                 entity.Property(e => e.RoomId).HasColumnName("RoomID");
+
+                entity.Property(e => e.Image).HasMaxLength(100);
 
                 entity.Property(e => e.Location)
                     .IsRequired()
@@ -369,29 +392,18 @@ namespace BussinessObjects
             modelBuilder.Entity<TransactionBooking>(entity =>
             {
                 entity.HasKey(e => e.TransactionId)
-                    .HasName("PK__Transact__55433A4BFCDEA72D");
+                    .HasName("PK__Transact__55433A4B9CC96A5B");
 
                 entity.ToTable("TransactionBooking");
 
                 entity.Property(e => e.TransactionId).HasColumnName("TransactionID");
 
-                entity.Property(e => e.AccId).HasColumnName("AccID");
-
-                entity.Property(e => e.BookingId).HasColumnName("BookingID");
-
                 entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
-
-                entity.Property(e => e.RoomId).HasColumnName("RoomID");
 
                 entity.HasOne(d => d.Payment)
                     .WithMany(p => p.TransactionBookings)
                     .HasForeignKey(d => d.PaymentId)
                     .HasConstraintName("FK_TransactionBooking_Payment");
-
-                entity.HasOne(d => d.Booking)
-                    .WithMany(p => p.TransactionBookings)
-                    .HasForeignKey(d => new { d.BookingId, d.RoomId, d.AccId })
-                    .HasConstraintName("FK_TransactionBooking_Booking");
             });
 
             modelBuilder.Entity<Voucher>(entity =>
@@ -410,7 +422,7 @@ namespace BussinessObjects
                     .HasConstraintName("FK_PartyHost_Voucher");
             });
 
-            modelBuilder.Entity<Staff>(entity =>
+            modelBuilder.Entity<staff>(entity =>
             {
                 entity.ToTable("Staff");
 
@@ -425,6 +437,8 @@ namespace BussinessObjects
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Gender).HasMaxLength(50);
+
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasMaxLength(20)
@@ -434,6 +448,8 @@ namespace BussinessObjects
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Role).HasMaxLength(200);
 
                 entity.Property(e => e.SuperiorId).HasColumnName("SuperiorID");
 
