@@ -71,5 +71,20 @@ namespace Services.Impl
             }
             return partyHostRepository.GetPartyHostAccount(request);
         }
+        public PartyHost checkPackageExisted(int id)
+        {
+            try
+            {
+                if (id == null)
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return partyHostRepository.checkPackageExisted(id);
+        }
     }
 }
