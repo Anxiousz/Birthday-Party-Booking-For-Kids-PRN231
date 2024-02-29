@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {}
+    "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
+    "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
+        "projectUniqueName": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
         "projectName": "BussinessObjects",
-        "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
-        "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\obj\\",
+        "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
+        "packagesPath": "C:\\Users\\sny12\\.nuget\\packages\\",
+        "outputPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\BussinessObjects\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sny12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -85,17 +90,21 @@
         }
       }
     },
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
+    "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
+        "projectUniqueName": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
         "projectName": "DAO",
-        "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
-        "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\obj\\",
+        "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
+        "packagesPath": "C:\\Users\\sny12\\.nuget\\packages\\",
+        "outputPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\DAO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sny12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,14 +112,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
-                "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj"
+              "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
+                "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj"
               }
             }
           }
@@ -150,17 +160,21 @@
         }
       }
     },
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {
+    "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\obj\\",
+        "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\sny12\\.nuget\\packages\\",
+        "outputPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sny12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,14 +182,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
-                "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj"
+              "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
+                "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj"
               }
             }
           }

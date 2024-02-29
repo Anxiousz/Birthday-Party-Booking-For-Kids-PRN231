@@ -7825,19 +7825,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anh12\\.nuget\\packages\\": {}
+    "C:\\Users\\sny12\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Services\\obj\\",
+      "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\sny12\\.nuget\\packages\\",
+      "outputPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Services\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sny12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7845,14 +7850,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj"
+            "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Thanh\\TEST\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj"
             }
           }
         }
