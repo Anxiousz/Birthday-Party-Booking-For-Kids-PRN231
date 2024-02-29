@@ -19,5 +19,6 @@ namespace Repository
         public RegisteredUser UpdateRegisteredUser(RegisteredUser request);
         public int CountRegisteredUser();
         public List<RegisteredUser> searchRegisteredUser(string context);
+        public RegisteredUser GetRegisteredUserAccount(RequestAccountLoginDTO request);
     }
 }

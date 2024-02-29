@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessObjects.Request;
+using BussinessObjects;
 
 namespace Services.Impl
 {
@@ -15,6 +17,22 @@ namespace Services.Impl
         public StaffService()
         {
             staffRepository = new StaffRepository();
+        }
+
+        public staff GetStaffAccount(RequestAccountLoginDTO request)
+        {
+            try
+            {
+                if (request == null)
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return staffRepository.GetStaffAccount(request);
         }
     }
 }

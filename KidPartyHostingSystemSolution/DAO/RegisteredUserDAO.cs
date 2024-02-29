@@ -111,5 +111,17 @@ namespace DAO
                 .ToList();
             return searchAccounts;
         }
+
+        public RegisteredUser GetRegisteredUserAccount(RequestAccountLoginDTO request)
+        {
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<MappingProfile>();
+            });
+            IMapper mapper = config.CreateMapper();
+            RegisteredUser registeredUser = mapper.Map<RegisteredUser>(request);
+            return dbContext.RegisteredUsers.FirstOrDefault(a => a.Email.Equals(registeredUser.Email.Trim()) && a.Password.Equals(registeredUser.Password.Trim()));
+        }
     }
 }
