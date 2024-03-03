@@ -1,4 +1,6 @@
-﻿using DAO;
+﻿using BusinessObjects.Request;
+using BussinessObjects;
+using DAO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,23 @@ namespace Services.Impl
         public ConfigRepository()
         {
             configDAO = new ConfigDAO();
+        }
+        public RequestConfigDTO CreateConfig(RequestConfigDTO request)
+        {
+            return configDAO.CreateConfig(request);
+        }
+
+        public Config checkConfigByID(int id)
+        {
+            return configDAO.checkConfigByID(id);
+        }
+        public RequestUpdateConfigDTO UpdateConfig(RequestUpdateConfigDTO request)
+        {
+            return configDAO.UpdateConfig(request);
+        }
+        public List<Config> GetConfig()
+        {
+            return configDAO.GetConfig();
         }
     }
 }

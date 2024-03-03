@@ -1,4 +1,5 @@
-﻿using DAO;
+﻿using BussinessObjects;
+using DAO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace Services.Impl
         {
             bookingDAO = new BookingDAO();
         }
+        public List<Booking> GetOrders() => bookingDAO.GetOrders();
     }
 }

@@ -31,5 +31,9 @@ namespace DAO
                 return instance;
             }
         }
+        public List<Booking> GetOrders()
+        {
+            return dbContext.Bookings.ToList();
+        }
     }
 }

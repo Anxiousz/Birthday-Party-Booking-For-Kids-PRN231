@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BussinessObjects;
 
 namespace Services.Impl
 {
@@ -16,5 +17,7 @@ namespace Services.Impl
         {
             bookingRepository = new BookingRepository();
         }
+        public List<Booking> GetOrders() => bookingRepository.GetOrders();
+
     }
 }
