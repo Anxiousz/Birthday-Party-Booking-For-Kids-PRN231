@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {}
+    "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
+    "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
         "projectName": "BussinessObjects",
-        "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
-        "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\obj\\",
+        "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\BussinessObjects\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,21 +91,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
+    "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
         "projectName": "DAO",
-        "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
-        "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\obj\\",
+        "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\DAO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,14 +117,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
-                "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj"
+              "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj": {
+                "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\BussinessObjects\\BussinessObjects.csproj"
               }
             }
           }
@@ -119,6 +134,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -146,21 +166,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {
+    "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,14 +192,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
-                "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj"
+              "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj": {
+                "projectPath": "C:\\Users\\asus\\OneDrive\\Documents\\PRN231\\Group\\KidPartyHostingSystemSolution\\DAO\\DAO.csproj"
               }
             }
           }
@@ -184,6 +209,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -205,7 +235,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
