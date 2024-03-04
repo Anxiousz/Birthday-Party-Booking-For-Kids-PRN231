@@ -53,5 +53,13 @@ namespace Repository.Impl
         {
             return partyHostDAO.searchPartyHost(context);
         }
+        public PartyHost GetPartyHostAccount(RequestAccountLoginDTO request)
+        {
+            return partyHostDAO.GetPartyHostAccount(request);
+        }
+        public PartyHost checkPackageExisted(int id)
+        {
+            return partyHostDAO.checkPackageExisted(id);
+        }
     }
 }

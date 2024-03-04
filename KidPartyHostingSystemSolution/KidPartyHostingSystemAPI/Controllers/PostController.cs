@@ -18,7 +18,6 @@ namespace KidPartyHostingSystemAPI.Controllers
         {
             _post = post;
         }
-        [A]
         [HttpGet("/Post")]
         public IActionResult GetPosts()
         {

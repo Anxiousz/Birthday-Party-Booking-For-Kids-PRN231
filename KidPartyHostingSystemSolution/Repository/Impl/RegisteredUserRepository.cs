@@ -54,5 +54,9 @@ namespace Repository.Impl
         {
             return registeredUserDAO.searchRegisteredUser(context);
         }
+        public RegisteredUser GetRegisteredUserAccount(RequestAccountLoginDTO request)
+        {
+            return registeredUserDAO.GetRegisteredUserAccount(request);
+        }
     }
 }
