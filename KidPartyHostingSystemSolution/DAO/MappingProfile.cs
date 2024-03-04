@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BussinessObjects;
+using BussinessObjects.Request;
 
 namespace DAO
 {
@@ -25,6 +26,8 @@ namespace DAO
             CreateMap<RequestPackageUpdateDTO, Package>();
             CreateMap<RequestConfigDTO, Config>();
             CreateMap<RequestUpdateConfigDTO, Config>();
+            CreateMap<RequestPostDTO, Post>();
+            CreateMap<RequestVoucherDTO, Voucher>();
         }
     }
 }
