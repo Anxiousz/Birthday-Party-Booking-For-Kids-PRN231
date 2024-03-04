@@ -47,6 +47,11 @@ namespace Services.Impl
            return postDAO.GetPosts();
         }
 
+        public Post GetPostById(int id)
+        {
+            return postDAO.GetPostById(id);
+        }
+
         public List<Post> searchPost(string context)
         {
             return postDAO.searchPost(context);

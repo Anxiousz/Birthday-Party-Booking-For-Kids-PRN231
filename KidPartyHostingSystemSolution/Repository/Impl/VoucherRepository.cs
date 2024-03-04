@@ -47,6 +47,11 @@ namespace Services.Impl
             return voucherDAO.GetVouchers();
         }
 
+        public Voucher GetVoucherById(int id)
+        {
+            return voucherDAO.GetVoucherById(id);
+        }
+
         public List<Voucher> searchVoucher(string context)
         {
             return voucherDAO.searchVoucher(context);

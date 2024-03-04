@@ -7,6 +7,7 @@ namespace Services
     public interface IVoucherService
     {
         public List<Voucher> GetVoucher();
+        public Voucher GetVoucherById(int id);
         public RequestVoucherDTO CreateVoucher(RequestVoucherDTO request);
         public bool DeleteVoucher(int id);
         public Voucher UpdateVoucher(Voucher request);

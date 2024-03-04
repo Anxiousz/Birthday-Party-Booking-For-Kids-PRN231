@@ -7,6 +7,7 @@ namespace Services
     public interface IPostRepository
     {
         public List<Post> GetPost();
+        public Post GetPostById(int id);
         public RequestPostDTO CreatePost(RequestPostDTO request);
         public bool DeletePost(int id);
         public Post UpdatePost(Post request);

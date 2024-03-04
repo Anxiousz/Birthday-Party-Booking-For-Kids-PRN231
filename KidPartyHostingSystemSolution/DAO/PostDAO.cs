@@ -48,6 +48,10 @@ namespace DAO
             List<Post> post = dbContext.Posts.ToList();
             return post;
         }
+        public Post GetPostById(int id)
+        {
+            return dbContext.Posts.FirstOrDefault(p => p.PostId == id);
+        }
         public RequestPostDTO CreatePost(RequestPostDTO request)
         {
             var config = new MapperConfiguration(cfg =>

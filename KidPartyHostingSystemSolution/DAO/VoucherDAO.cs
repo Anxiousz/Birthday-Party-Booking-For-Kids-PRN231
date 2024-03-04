@@ -53,6 +53,11 @@ namespace DAO
             List<Voucher> voucher = dbContext.Vouchers.ToList();
             return voucher;
         }
+
+        public Voucher GetVoucherById(int id)
+        {
+            return dbContext.Vouchers.FirstOrDefault(v => v.VoucherId == id);
+        }
         public RequestVoucherDTO CreateVoucher(RequestVoucherDTO request)
         {
             var config = new MapperConfiguration(cfg =>

@@ -28,6 +28,16 @@ namespace KidPartyHostingSystemAPI.Controllers
             }
             return NotFound();
         }
+        [HttpGet("/Post/{id}")]
+        public IActionResult GetPostById(int id)
+        {
+            var post = _post.GetPostById(id);
+            if (post != null)
+            {
+                return Ok(post);
+            }
+            return NotFound();
+        }
 
         [HttpPost("/Post")]
         public IActionResult CreatePost([FromBody] RequestPostDTO request)

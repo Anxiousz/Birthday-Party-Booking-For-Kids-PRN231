@@ -49,6 +49,11 @@ namespace Services.Impl
             return postRepository.GetPost();
         }
 
+        public Post GetPostById(int id)
+        {
+            return postRepository.GetPostById(id);  
+        }
+
         public List<Post> searchPost(string context)
         {
             return postRepository.searchPost(context);

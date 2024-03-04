@@ -359,6 +359,22 @@
   },
   {
     "ContainingType": "KidPartyHostingSystemAPI.Controllers.PostController",
+    "Method": "GetPostById",
+    "RelativePath": "Post/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyHostingSystemAPI.Controllers.PostController",
     "Method": "DeletePost",
     "RelativePath": "Post/{id}",
     "HttpMethod": "DELETE",
@@ -431,6 +447,22 @@
       {
         "Name": "request",
         "Type": "BussinessObjects.Request.RequestVoucherDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyHostingSystemAPI.Controllers.VoucherController",
+    "Method": "GetVouchetById",
+    "RelativePath": "Voucher/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

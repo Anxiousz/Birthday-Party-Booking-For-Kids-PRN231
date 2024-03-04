@@ -29,6 +29,16 @@ namespace KidPartyHostingSystemAPI.Controllers
             }
             return NotFound();
         }
+        [HttpGet("/Voucher/{id}")]
+        public IActionResult GetVouchetById(int id)
+        {
+            var voucher = _voucher.GetVoucherById(id);
+            if (voucher != null)
+            {
+                return Ok(voucher);
+            }
+            return NotFound();
+        }
 
         [HttpPost("/Voucher")]
         public IActionResult CreateVoucher([FromBody] RequestVoucherDTO request)
