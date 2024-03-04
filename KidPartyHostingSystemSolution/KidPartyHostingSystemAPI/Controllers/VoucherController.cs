@@ -19,7 +19,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             _voucher = voucher;
         }
 
-        [HttpGet("/Voucher")]
+        [HttpGet]
         public IActionResult GetPartyHost()
         {
             var voucher = _voucher.GetVoucher();
@@ -29,7 +29,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             }
             return NotFound();
         }
-        [HttpGet("/Voucher/{id}")]
+        [HttpGet("{id}")]
         public IActionResult GetVouchetById(int id)
         {
             var voucher = _voucher.GetVoucherById(id);
@@ -40,7 +40,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             return NotFound();
         }
 
-        [HttpPost("/Voucher")]
+        [HttpPost]
         public IActionResult CreateVoucher([FromBody] RequestVoucherDTO request)
         {
             if (request == null)
@@ -57,7 +57,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             return Conflict("The voucher is existed");
         }
 
-        [HttpDelete("/Voucher/{id}")]
+        [HttpDelete("{id}")]
         public IActionResult DeleteVoucher(int id)
         {
             Voucher checkExisted = _voucher.checkVoucherExistedByID(id);
@@ -69,7 +69,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             return NotFound("The voucher not found");
         }
 
-        [HttpPut("/Voucher/{id}")]
+        [HttpPut("{id}")]
         public IActionResult UpdateVoucher(int id, [FromBody] RequestVoucherDTO request)
         {
             if (request == null)
@@ -99,7 +99,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             }
         }
 
-        [HttpGet("/Voucher/search/{context}")]
+        [HttpGet("search/{context}")]
         public IActionResult searchVoucher(string context)
         {
             List<Voucher> searchVoucher = _voucher.searchVoucher(context);

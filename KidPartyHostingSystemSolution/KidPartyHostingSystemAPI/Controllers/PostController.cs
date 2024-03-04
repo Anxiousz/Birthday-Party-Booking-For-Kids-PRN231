@@ -18,7 +18,7 @@ namespace KidPartyHostingSystemAPI.Controllers
         {
             _post = post;
         }
-        [HttpGet("/Post")]
+        [HttpGet]
         public IActionResult GetPosts()
         {
             var post = _post.GetPost();
@@ -28,7 +28,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             }
             return NotFound();
         }
-        [HttpGet("/Post/{id}")]
+        [HttpGet("{id}")]
         public IActionResult GetPostById(int id)
         {
             var post = _post.GetPostById(id);
@@ -39,7 +39,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             return NotFound();
         }
 
-        [HttpPost("/Post")]
+        [HttpPost]
         public IActionResult CreatePost([FromBody] RequestPostDTO request)
         {
             if (request == null)
@@ -56,7 +56,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             return Conflict("The post is existed");
         }
 
-        [HttpDelete("/Post/{id}")]
+        [HttpDelete("{id}")]
         public IActionResult DeletePost(int id)
         {
             Post checkExisted = _post.checkPostExistedByID(id);
@@ -68,7 +68,7 @@ namespace KidPartyHostingSystemAPI.Controllers
             return NotFound("The post not found");
         }
 
-        [HttpPut("/Post/{id}")]
+        [HttpPut("{id}")]
         public IActionResult UpdatePost(int id, [FromBody] RequestPostDTO request)
         {
             if (request == null)
@@ -101,7 +101,7 @@ namespace KidPartyHostingSystemAPI.Controllers
         }
 
 
-        [HttpGet("/Post/search/{context}")]
+        [HttpGet("search/{context}")]
         public IActionResult searchPost(string context)
         {
             List<Post> searchPost = _post.searchPost(context);
