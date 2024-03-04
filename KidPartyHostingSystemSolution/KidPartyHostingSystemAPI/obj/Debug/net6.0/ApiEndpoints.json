@@ -1,8 +1,102 @@
 [
   {
     "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "CountAccount",
+    "RelativePath": "api/v1/Dashboard/Account/total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "GetAllPackages",
+    "RelativePath": "api/v1/Dashboard/Package",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "CreatePackage",
+    "RelativePath": "api/v1/Dashboard/Package",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessObjects.Request.RequestPackageCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "DeletePackage",
+    "RelativePath": "api/v1/Dashboard/Package",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "UpdatePackage",
+    "RelativePath": "api/v1/Dashboard/Package",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessObjects.Request.RequestPackageUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "GetPackage",
+    "RelativePath": "api/v1/Dashboard/Package/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "CountPackage",
+    "RelativePath": "api/v1/Dashboard/Package/total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
     "Method": "GetPartyHost",
-    "RelativePath": "PartyHost",
+    "RelativePath": "api/v1/Dashboard/PartyHost",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +106,7 @@
   {
     "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
     "Method": "CreatePartyHost",
-    "RelativePath": "PartyHost",
+    "RelativePath": "api/v1/Dashboard/PartyHost",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +122,7 @@
   {
     "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
     "Method": "DeletePartyHost",
-    "RelativePath": "PartyHost/{id}",
+    "RelativePath": "api/v1/Dashboard/PartyHost/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -43,8 +137,8 @@
   },
   {
     "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
-    "Method": "searchAccount",
-    "RelativePath": "PartyHost/search/{context}",
+    "Method": "searchPartyHost",
+    "RelativePath": "api/v1/Dashboard/PartyHost/search/{context}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -52,6 +146,186 @@
       {
         "Name": "context",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "GetRegisteredUser",
+    "RelativePath": "api/v1/Dashboard/RegisteredUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "CreateRegisteredUser",
+    "RelativePath": "api/v1/Dashboard/RegisteredUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessObjects.Request.RequestRegisteredUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "DeleteRegisteredUser",
+    "RelativePath": "api/v1/Dashboard/RegisteredUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "searchRegisteredUser",
+    "RelativePath": "api/v1/Dashboard/RegisteredUser/search/{context}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "GetStaff",
+    "RelativePath": "api/v1/Dashboard/Staff",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "CreateStaff",
+    "RelativePath": "api/v1/Dashboard/Staff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessObjects.Request.RequestStaffDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "DeleteStaff",
+    "RelativePath": "api/v1/Dashboard/Staff/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
+    "Method": "searchStaff",
+    "RelativePath": "api/v1/Dashboard/Staff/search/{context}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "context",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.LoginController",
+    "Method": "LoginWithAdmin",
+    "RelativePath": "api/v1/Login/Admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "account",
+        "Type": "BusinessObjects.Request.RequestAccountLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.LoginController",
+    "Method": "LoginWithPartyHost",
+    "RelativePath": "api/v1/Login/PartyHost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "account",
+        "Type": "BusinessObjects.Request.RequestAccountLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.LoginController",
+    "Method": "LoginWithRegisteredUser",
+    "RelativePath": "api/v1/Login/RegisteredUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "account",
+        "Type": "BusinessObjects.Request.RequestAccountLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KidPartyBookingSystem.Controllers.LoginController",
+    "Method": "LoginWithStaff",
+    "RelativePath": "api/v1/Login/Staff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "account",
+        "Type": "BusinessObjects.Request.RequestAccountLoginDTO",
         "IsRequired": true
       }
     ],
@@ -124,74 +398,6 @@
     "ContainingType": "KidPartyHostingSystemAPI.Controllers.PostController",
     "Method": "searchPost",
     "RelativePath": "Post/search/{context}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "context",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
-    "Method": "GetRegisteredUser",
-    "RelativePath": "RegisteredUser",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
-    "Method": "CreateRegisteredUser",
-    "RelativePath": "RegisteredUser",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "BusinessObjects.Request.RequestRegisteredUserDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
-    "Method": "DeleteRegisteredUser",
-    "RelativePath": "RegisteredUser/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
-    "Method": "CountRegistredUser",
-    "RelativePath": "RegisteredUser/count",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KidPartyBookingSystem.Controllers.DashboardController",
-    "Method": "searchRegisteredUser",
-    "RelativePath": "RegisteredUser/search/{context}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
