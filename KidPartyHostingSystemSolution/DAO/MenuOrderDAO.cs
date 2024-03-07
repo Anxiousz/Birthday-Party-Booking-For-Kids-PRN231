@@ -1,5 +1,6 @@
 ﻿using BusinessObjects;
 using BussinessObjects;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,27 @@ namespace DAO
                 }
                 return instance;
             }
+        }
+        // Check Menu Party Host (
+        public bool checkFoodInstance(int id)
+        {
+            bool result = false;
+            MenuOrder order = null;
+            try
+            {
+                order = dbContext.MenuOrders
+                    .Include(m => m.Bookings)
+                    .FirstOrDefault(m => m.FoodOrderId == id && m.Bookings.Any(b => b.BookingStatus == 1));
+                if (order == null)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return result;
         }
     }
 }

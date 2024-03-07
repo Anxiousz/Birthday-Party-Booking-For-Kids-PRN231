@@ -1,5 +1,7 @@
-﻿using BusinessObjects;
+﻿using AutoMapper;
+using BusinessObjects;
 using BussinessObjects;
+using BussinessObjects.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,39 @@ namespace DAO
                     instance = new BookingDAO();
                 }
                 return instance;
+            }
+        }
+        public List<Booking> GetOrders()
+        {
+            return dbContext.Bookings.ToList();
+        }
+
+        public async Task<bool> BookingRoom(RequestBookingRoomDTO request)
+        {
+            try
+            {
+                var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.AddProfile<MappingProfile>();
+                });
+                IMapper mapper = config.CreateMapper();
+                Booking booking = mapper.Map<Booking>(request);
+
+
+                dbContext.Bookings.Add(booking);
+
+                if (await dbContext.SaveChangesAsync() > 0)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
             }
         }
     }

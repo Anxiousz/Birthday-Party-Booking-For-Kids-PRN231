@@ -8305,24 +8305,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vinh\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\anh12\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinh\\Desktop\\PRN231\\KidPartyHostingSystemSolution\\KidPartyHostingSystemAPI\\KidPartyHostingSystemAPI.csproj",
+      "projectUniqueName": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\KidPartyHostingSystemAPI\\KidPartyHostingSystemAPI.csproj",
       "projectName": "KidPartyHostingSystemAPI",
-      "projectPath": "C:\\Users\\Vinh\\Desktop\\PRN231\\KidPartyHostingSystemSolution\\KidPartyHostingSystemAPI\\KidPartyHostingSystemAPI.csproj",
-      "packagesPath": "C:\\Users\\Vinh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vinh\\Desktop\\PRN231\\KidPartyHostingSystemSolution\\KidPartyHostingSystemAPI\\obj\\",
+      "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\KidPartyHostingSystemAPI\\KidPartyHostingSystemAPI.csproj",
+      "packagesPath": "C:\\Users\\anh12\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\KidPartyHostingSystemAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Vinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\anh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8330,15 +8325,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Vinh\\Desktop\\PRN231\\KidPartyHostingSystemSolution\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Vinh\\Desktop\\PRN231\\KidPartyHostingSystemSolution\\Services\\Services.csproj"
+            "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\anh12\\OneDrive\\Máy tính\\Chuyên ngành 8\\PRN231\\Project Code\\KidPartyHostingSystemSolution\\Services\\Services.csproj"
             }
           }
         }
@@ -8385,7 +8379,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

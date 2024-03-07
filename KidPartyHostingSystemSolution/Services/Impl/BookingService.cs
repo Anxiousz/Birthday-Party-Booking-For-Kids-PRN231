@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BussinessObjects;
+using BussinessObjects.Request;
 
 namespace Services.Impl
 {
@@ -16,5 +18,8 @@ namespace Services.Impl
         {
             bookingRepository = new BookingRepository();
         }
+        public List<Booking> GetOrders() => bookingRepository.GetOrders();
+        public Task<bool> BookingRoom(RequestBookingRoomDTO request) => bookingRepository.BookingRoom(request);
+
     }
 }
